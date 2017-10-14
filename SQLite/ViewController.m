@@ -43,7 +43,7 @@
     {
         const char *dbpath = [_databasePath UTF8String];
         
-        if (sqlite3_open(dbpath, &_contactDB) == SQLITE_OK)
+        if (sqlite3_open(dbpath, &_contactDB) == SQLITE_OK) //Create new table
         {
             char *error;
             const char *sql_stmt =
